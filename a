@@ -217,7 +217,7 @@ local function ConfigsToList(FolderName)
 
 	return Configs
 end
-local id = game:GetService("HttpService"):GenerateGUID(false)
+id = game:GetService("HttpService"):GenerateGUID(false)
 function Assets:Screen() local ScreenAsset = GetAsset("Screen/Bracket")
 	if not Debug then sethiddenproperty(ScreenAsset,"OnTopOfCoreBlur",true) end
 	ScreenAsset.Name = "Bracket" .. id
