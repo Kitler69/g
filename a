@@ -220,7 +220,7 @@ end
 id = game:GetService("HttpService"):GenerateGUID(false)
 function Assets:Screen() local ScreenAsset = GetAsset("Screen/Bracket")
 	if not Debug then sethiddenproperty(ScreenAsset,"OnTopOfCoreBlur",true) end
-	ScreenAsset.Name = "Bracket" .. id
+	ScreenAsset.Name = "Bracket " .. id
 	ScreenAsset.Parent = Debug and LocalPlayer:FindFirstChildOfClass("PlayerGui") or CoreGui
 	return {ScreenAsset = ScreenAsset,TableToColor = TableToColor}
 end
